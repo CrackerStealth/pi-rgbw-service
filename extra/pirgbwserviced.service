@@ -1,0 +1,14 @@
+[Unit]
+Description=RGBW light controller using the Raspberry Pi and SMD5050 style lights.
+After=multi-user.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/pi/pi-rgbw-service
+ExecStart=/usr/bin/python /home/pi/pi-rgbw-service/service.py
+StandardOutput=inherit
+StandardError=inherit
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target

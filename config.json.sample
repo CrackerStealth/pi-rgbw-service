@@ -1,0 +1,13 @@
+{"listen_port" : 8443,
+ "ssl_key" : "/home/pi/pi-rgbw-service-cert/localhost.key",
+ "ssl_cert" : "/home/pi/pi-rgbw-service-cert/localhost.crt",
+ "lights" : { "LightName" : { "enable_onoff" : true,
+                              "enable_rgb" : true,
+                              "enable_ww" : false,
+                              "enable_cw" : false,
+                              "gpio_onoff" : 21,
+                              "gpio_red" : 17,
+                              "gpio_green" : 27,
+                              "gpio_blue" : 22,
+                              "gpio_ww" : 23,
+                              "gpio_cw" : 24}}}
